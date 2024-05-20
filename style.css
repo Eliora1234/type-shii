@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+
+}
+header{
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul{
+   display: flex;
+   list-style-type: none;
+   align-items: center;
+}
+
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    color: palevioletred;
+    display: inline-block;
+}
+li a::after{
+    content: '';
+    display: block;
+    height:4px;
+    width: 0;
+    background-color: palevioletred;
+    transition: all 0.5s;;
+}
+li a:hover::after{
+    width:100%;
+}
+main .container{
+    display: inline;
+    border-radius: 100%;
+}
+main{
+    display: flex;
+    border:1px solid palevioletred;
+    height:calc(100vh - 100px);
+    align-items: center;
+    justify-content: center; 
+    background-color: whitesmoke;  
+}
+.hero-img{
+    max-width: 670px;
+    height:auto;
+    border:5px solid palevioletred;
+}
+.content-left{
+    width:30%;
+}
+main h1{
+    font-size:54px;
+    color: palevioletred;
+    text-transform: uppercase;
+}
+main h2{
+    font-size: 50px;
+    color: palevioletred;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+main h3{
+    font-size:54px;
+    color: palevioletred;
+    text-transform: uppercase;
+    align-items: left;
+    justify-content: left;
+}
+main h5{
+    font-size:15px;
+    color: palevioletred;
+    text-transform: uppercase;
+    font-weight: 400;
+    align-items: right;
+    justify-content: right;
+}
+main p{
+    font-size: 25px;
+    font-weight: 400;
+    color: palevioletred;
+    line-height: 31.5px;
+    margin:30px 0;
+}
+.container{
+    display: inline-block;
+    width:300px;
+    height:300px;
+    border:3px solid pink;
+    margin: 5px;   
+}
+.container .descriptions{
+    padding: 10px;
+    text-align:center;
+    color: palevioletred;
+    text-transform: uppercase;
+}
+.container:hover{
+    border:3px solid palevioletred ;
+}
+
+.container{
+  float: left; 
+  width: 100%;
+  padding: 5px;   
+} 
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.contatus {
+    width: 80%;
+    max-width: 600px;
+    margin:50px auto;
+    padding:20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.contactus h4{
+    font-size:54px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: palevioletred;
+}
+form input,
+form textarea{
+    display: block;
+    width:100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border:3px solid palevioletred;
+    border-radius: 5px;
+    background-color: pink;
+    color: plum;
+}
+form input:focus,
+form textarea:focus{
+    outline:none;
+    box-shadow: 0 0 5px pink;
+}
+form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border:1px solid palevioletred;
+    border-radius: 5px;
+    background-color: pink;
+    color: grey;
+    cursor: pionter;
+    transition: 0.3s ease;
+}
+form button:hover{
+    background-color: salmon;
+
+}
